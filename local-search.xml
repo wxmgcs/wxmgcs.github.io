@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="/2022/12/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <url>/2022/12/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<p>[toc]</p><h5 id="jdk源码中用到了哪些设计模式？"><a href="#jdk源码中用到了哪些设计模式？" class="headerlink" title="jdk源码中用到了哪些设计模式？"></a>jdk源码中用到了哪些设计模式？</h5><h6 id="（1）单例模式"><a href="#（1）单例模式" class="headerlink" title="（1）单例模式"></a>（1）单例模式</h6><blockquote><p>单例模式用于Runtime,Calendar和其他的一些类中。“饿汉式”是在不管你用的用不上，一开始就建立这个单例对象</p></blockquote><p><img src="https://gitee.com/PatrickW/images/raw/master/images/20210131130507884.png"></p><h6 id="（2）工厂模式"><a href="#（2）工厂模式" class="headerlink" title="（2）工厂模式"></a>（2）工厂模式</h6><blockquote><p>被用于各种不可变的类如Boolean，像Boolean.valueOf方法。</p><p>日期格式化类和加密类</p></blockquote><h6 id="（3）装饰模式"><a href="#（3）装饰模式" class="headerlink" title="（3）装饰模式"></a>（3）装饰模式</h6><blockquote><p>装饰器模式被用于多个javaIO类</p><p>IO库中用到了适配器模式和装饰器模式，比如InputStream是字节流，可以借助InputStreamReader转换为Reader的子类，实现操作字节流目的用的就是适配器模式,将InputStream包装成FileInputStream等就是装饰器模式；</p></blockquote><p><img src="https://gitee.com/PatrickW/images/raw/master/images/20210131130610766.png"></p><h6 id="（4）代理模式"><a href="#（4）代理模式" class="headerlink" title="（4）代理模式"></a>（4）代理模式</h6><blockquote><p>Jdk动态代理。</p></blockquote><h6 id="（5）迭代器模式"><a href="#（5）迭代器模式" class="headerlink" title="（5）迭代器模式"></a>（5）迭代器模式</h6><blockquote><p>Java集合中的迭代器。</p></blockquote><p>(6) 模板方法模式</p><blockquote><p>实现了Comparable接口的类；</p></blockquote><h5 id="Spring框架中使用到的设计模式"><a href="#Spring框架中使用到的设计模式" class="headerlink" title="Spring框架中使用到的设计模式"></a>Spring框架中使用到的设计模式</h5><blockquote><p>beanFactory用的是工厂模式；<br>创建的bean默认是单例模式；<br>AOP中用到的是代理模式；<br>jdbcTemplate用到了模板方法模式；<br>Spring事件驱动模型使用的观察者模式；<br>SpringMVC适配Controller用到的适配器模式。</p></blockquote><h5 id="Mybatis中用到了哪些设计模式？"><a href="#Mybatis中用到了哪些设计模式？" class="headerlink" title="Mybatis中用到了哪些设计模式？"></a>Mybatis中用到了哪些设计模式？</h5><p>日志模块：代理模式、适配器模式</p><p>数据源模块：代理模式、工厂模式</p><p>缓存模块：装饰器模式</p><p>初始化阶段：建造者模式</p><p>代理阶段：策略模式</p><p>数据读写阶段：模板模式</p><p>插件化开发：责任链模式</p><h5 id="多线程中存在的设计模式"><a href="#多线程中存在的设计模式" class="headerlink" title="多线程中存在的设计模式"></a>多线程中存在的设计模式</h5><p>Synchronized&#x2F;ReentrantLock&#x2F;Semaphore的互斥模式；<br>ReentrantLock&#x2F;Semaphore的信号模式；<br>wait&#x2F;notify的会合模式；<br>Semaphore的多元复用模式；<br>CyclicBarrier的栅栏模式；<br>双重检查锁单例模式；<br>ReentrantReadWriteLock的读写锁模式；<br>ExecutorService线程池模式；<br>ThreadLocal线程局部存储模式；</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Node.js常见使用</title>
+    <link href="/2022/12/01/%E5%A4%A7%E5%89%8D%E7%AB%AF/Node.js/"/>
+    <url>/2022/12/01/%E5%A4%A7%E5%89%8D%E7%AB%AF/Node.js/</url>
+    
+    <content type="html"><![CDATA[<h5 id="参考书单"><a href="#参考书单" class="headerlink" title="参考书单"></a>参考书单</h5><p>《Node.js设计模式 第2版》</p><blockquote><p><a href="https://read.douban.com/ebook/58825278">https://read.douban.com/ebook/58825278</a></p></blockquote><p>《狼书（卷1）：更了不起的Node.js》</p><blockquote><p><a href="https://read.douban.com/ebook/163986504">https://read.douban.com/ebook/163986504</a></p></blockquote><h5 id="基础设计模式"><a href="#基础设计模式" class="headerlink" title="基础设计模式"></a>基础设计模式</h5><p>回调模式</p><p>观察者模式</p><p>异步控制流模式</p><p>1、回调函数</p><p>2、ES2015+</p><p>流编程</p><p>工厂模式</p><p>代理模式</p><p>装饰者模式</p><p>适配器模式</p><p>策略模式</p><p>状态模式</p><p>模板模式</p><p>中间件</p><p>命令模式</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>工具</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>使用hexo搭建博客</title>
+    <link href="/2022/12/01/%E5%B7%A5%E5%85%B7%E7%AF%87/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/12/01/%E5%B7%A5%E5%85%B7%E7%AF%87/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h3 id="1、初始化项目"><a href="#1、初始化项目" class="headerlink" title="1、初始化项目"></a>1、初始化项目</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">hexo init myblog<br>cd myblog<br>npm install <span class="hljs-regexp">//</span> npm i<br></code></pre></td></tr></table></figure><h3 id="2、启动项目"><a href="#2、启动项目" class="headerlink" title="2、启动项目"></a>2、启动项目</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">hexo server <span class="hljs-regexp">//</span> hexo s  <span class="hljs-comment"># 会生成db.json</span><br></code></pre></td></tr></table></figure><p><a href="https://hexo.io/docs/server.html">更多</a></p><h3 id="3、创建文章"><a href="#3、创建文章" class="headerlink" title="3、创建文章"></a>3、创建文章</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&quot;使用hexo搭建博客&quot;</span><br></code></pre></td></tr></table></figure><blockquote><p>也可以直接在 博客根目录&#x2F;source&#x2F;_posts下创建xxx&#x2F;xxx.md ,内容以下面内容开头</p></blockquote><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">xxx</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2022-12-01 23:23:12</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">工具</span><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br></code></pre></td></tr></table></figure><p><a href="https://hexo.io/docs/writing.html">更多</a></p><h3 id="4、激活标签"><a href="#4、激活标签" class="headerlink" title="4、激活标签"></a>4、激活标签</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-string">npm</span> <span class="hljs-string">i</span> <span class="hljs-string">hexo-generator-json-content</span> <span class="hljs-string">--save</span><br><br><span class="hljs-string">vim</span> <span class="hljs-string">_config.yml</span> <span class="hljs-string">新增以下内容</span><br><br><span class="hljs-comment"># tags</span><br><span class="hljs-attr">jsonContent:</span><br>    <span class="hljs-attr">meta:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">pages:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">posts:</span><br>      <span class="hljs-attr">title:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">date:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">path:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">text:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">raw:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">content:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">slug:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">updated:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">comments:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">link:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">permalink:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">excerpt:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">categories:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">tags:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><h3 id="5、换肤"><a href="#5、换肤" class="headerlink" title="5、换肤"></a>5、换肤</h3><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs clean">git clone https:<span class="hljs-comment">//github.com/litten/hexo-theme-yilia.git themes/yilia</span><br>vim _config.yml<br><br># Extensions<br>## Plugins: https:<span class="hljs-comment">//hexo.io/plugins/</span><br>## Themes: https:<span class="hljs-comment">//hexo.io/themes/</span><br>#theme: landscape<br>theme: yilia<br></code></pre></td></tr></table></figure><blockquote><p>修改具体配置，可编辑 themes&#x2F;yilia&#x2F;_config.yml</p></blockquote><h3 id="6、安装部署插件"><a href="#6、安装部署插件" class="headerlink" title="6、安装部署插件"></a>6、安装部署插件</h3><blockquote><p>部署到github.io</p></blockquote><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">npm <span class="hljs-selector-tag">i</span> hexo-deployer-git <span class="hljs-attr">--save</span><br></code></pre></td></tr></table></figure><p>配置 github.io 支持token 登录</p><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs xl"><span class="hljs-function"><span class="hljs-title">github</span> -&gt;</span> <span class="hljs-function"><span class="hljs-title">setting</span> -&gt;</span> D<span class="hljs-function"><span class="hljs-title">eveloper</span> settings -&gt;</span> G<span class="hljs-function"><span class="hljs-title">enerate</span> new token -&gt;</span> P<span class="hljs-function"><span class="hljs-title">erson</span> access tokens -&gt;</span> 勾选 repo <br><br>vim _config.yml<br><br># Deployment<br>## Docs: https:<span class="hljs-comment">//hexo.io/docs/one-command-deployment</span><br>deploy:<br>  type: git<br>  repo: https:<span class="hljs-comment">//github.com/wxmgcs/wxmgcs.github.io.git</span><br>  branch: master<br></code></pre></td></tr></table></figure><p>执行以下命令部署</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure><p><a href="https://hexo.io/docs/one-command-deployment.html">更多</a></p><h3 id="7、生成静态文件"><a href="#7、生成静态文件" class="headerlink" title="7、生成静态文件"></a>7、生成静态文件</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">hexo</span> clean  <span class="hljs-comment"># 会删除掉public 目录和db.json</span><br>hexo g  <span class="hljs-comment"># 重新在public目录下创建资源</span><br></code></pre></td></tr></table></figure><p> <a href="https://hexo.io/docs/generating.html">hexo g 更多</a></p><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>工具</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

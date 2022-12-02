@@ -16,22 +16,22 @@
   <meta name="author" content="Patrick">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1、初始化项目123hexo init myblogcd myblognpm install &#x2F;&#x2F; npm i  2、启动项目1hexo server &#x2F;&#x2F; hexo s  # 会生成db.json 更多 3、创建文章1hexo new &quot;使用hexo搭建博客&quot;  也可以直接在 博客根目录&#x2F;source&#x2F;_posts下创建xxx&#x2F;xxx.md ,内">
+    <meta name="description" content="参考书单《Node.js设计模式 第2版》  https:&#x2F;&#x2F;read.douban.com&#x2F;ebook&#x2F;58825278  《狼书（卷1）：更了不起的Node.js》  https:&#x2F;&#x2F;read.douban.com&#x2F;ebook&#x2F;163986504  基础设计模式回调模式 观察者模式 异步控制流模式 1、回调函数 2、ES2015+ 流编程 工厂模式 代理模式 装饰者模式 适配器模式 策略模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo搭建博客">
-<meta property="og:url" content="http://example.com/2022/12/01/%E5%B7%A5%E5%85%B7%E7%AF%87/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="Node.js常见使用">
+<meta property="og:url" content="http://example.com/2022/12/01/%E5%A4%A7%E5%89%8D%E7%AB%AF/Node.js/index.html">
 <meta property="og:site_name" content="wxmgcs">
-<meta property="og:description" content="1、初始化项目123hexo init myblogcd myblognpm install &#x2F;&#x2F; npm i  2、启动项目1hexo server &#x2F;&#x2F; hexo s  # 会生成db.json 更多 3、创建文章1hexo new &quot;使用hexo搭建博客&quot;  也可以直接在 博客根目录&#x2F;source&#x2F;_posts下创建xxx&#x2F;xxx.md ,内">
+<meta property="og:description" content="参考书单《Node.js设计模式 第2版》  https:&#x2F;&#x2F;read.douban.com&#x2F;ebook&#x2F;58825278  《狼书（卷1）：更了不起的Node.js》  https:&#x2F;&#x2F;read.douban.com&#x2F;ebook&#x2F;163986504  基础设计模式回调模式 观察者模式 异步控制流模式 1、回调函数 2、ES2015+ 流编程 工厂模式 代理模式 装饰者模式 适配器模式 策略模式">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-01T15:23:12.000Z">
-<meta property="article:modified_time" content="2022-12-02T13:15:06.018Z">
+<meta property="article:modified_time" content="2022-12-02T13:15:06.017Z">
 <meta property="article:author" content="Patrick">
 <meta property="article:tag" content="工具">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>使用hexo搭建博客 - wxmgcs</title>
+  <title>Node.js常见使用 - wxmgcs</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用hexo搭建博客"></span>
+            <span id="subtitle" data-typed-text="Node.js常见使用"></span>
           
         </div>
 
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          195 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          12 分钟
+          2 分钟
         
       </span>
     
@@ -268,39 +268,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">使用hexo搭建博客</h1>
+            <h1 style="display: none">Node.js常见使用</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="1、初始化项目"><a href="#1、初始化项目" class="headerlink" title="1、初始化项目"></a>1、初始化项目</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">hexo init myblog<br>cd myblog<br>npm install <span class="hljs-regexp">//</span> npm i<br></code></pre></td></tr></table></figure>
-
-<h3 id="2、启动项目"><a href="#2、启动项目" class="headerlink" title="2、启动项目"></a>2、启动项目</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">hexo server <span class="hljs-regexp">//</span> hexo s  <span class="hljs-comment"># 会生成db.json</span><br></code></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">更多</a></p>
-<h3 id="3、创建文章"><a href="#3、创建文章" class="headerlink" title="3、创建文章"></a>3、创建文章</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&quot;使用hexo搭建博客&quot;</span><br></code></pre></td></tr></table></figure>
+                <h5 id="参考书单"><a href="#参考书单" class="headerlink" title="参考书单"></a>参考书单</h5><p>《Node.js设计模式 第2版》</p>
 <blockquote>
-<p>也可以直接在 博客根目录&#x2F;source&#x2F;_posts下创建xxx&#x2F;xxx.md ,内容以下面内容开头</p>
+<p><a target="_blank" rel="noopener" href="https://read.douban.com/ebook/58825278">https://read.douban.com/ebook/58825278</a></p>
 </blockquote>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">xxx</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2022-12-01 23:23:12</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">工具</span><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br></code></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">更多</a></p>
-<h3 id="4、激活标签"><a href="#4、激活标签" class="headerlink" title="4、激活标签"></a>4、激活标签</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-string">npm</span> <span class="hljs-string">i</span> <span class="hljs-string">hexo-generator-json-content</span> <span class="hljs-string">--save</span><br><br><span class="hljs-string">vim</span> <span class="hljs-string">_config.yml</span> <span class="hljs-string">新增以下内容</span><br><br><span class="hljs-comment"># tags</span><br><span class="hljs-attr">jsonContent:</span><br>    <span class="hljs-attr">meta:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">pages:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">posts:</span><br>      <span class="hljs-attr">title:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">date:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">path:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">text:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">raw:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">content:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">slug:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">updated:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">comments:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">link:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">permalink:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">excerpt:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">categories:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">tags:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="5、换肤"><a href="#5、换肤" class="headerlink" title="5、换肤"></a>5、换肤</h3><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs clean">git clone https:<span class="hljs-comment">//github.com/litten/hexo-theme-yilia.git themes/yilia</span><br>vim _config.yml<br><br># Extensions<br>## Plugins: https:<span class="hljs-comment">//hexo.io/plugins/</span><br>## Themes: https:<span class="hljs-comment">//hexo.io/themes/</span><br>#theme: landscape<br>theme: yilia<br></code></pre></td></tr></table></figure>
+<p>《狼书（卷1）：更了不起的Node.js》</p>
 <blockquote>
-<p>修改具体配置，可编辑 themes&#x2F;yilia&#x2F;_config.yml</p>
+<p><a target="_blank" rel="noopener" href="https://read.douban.com/ebook/163986504">https://read.douban.com/ebook/163986504</a></p>
 </blockquote>
-<h3 id="6、安装部署插件"><a href="#6、安装部署插件" class="headerlink" title="6、安装部署插件"></a>6、安装部署插件</h3><blockquote>
-<p>部署到github.io</p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">npm <span class="hljs-selector-tag">i</span> hexo-deployer-git <span class="hljs-attr">--save</span><br></code></pre></td></tr></table></figure>
-<p>配置 github.io 支持token 登录</p>
-<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs xl"><span class="hljs-function"><span class="hljs-title">github</span> -&gt;</span> <span class="hljs-function"><span class="hljs-title">setting</span> -&gt;</span> D<span class="hljs-function"><span class="hljs-title">eveloper</span> settings -&gt;</span> G<span class="hljs-function"><span class="hljs-title">enerate</span> new token -&gt;</span> P<span class="hljs-function"><span class="hljs-title">erson</span> access tokens -&gt;</span> 勾选 repo <br><br>vim _config.yml<br><br># Deployment<br>## Docs: https:<span class="hljs-comment">//hexo.io/docs/one-command-deployment</span><br>deploy:<br>  type: git<br>  repo: https:<span class="hljs-comment">//github.com/wxmgcs/wxmgcs.github.io.git</span><br>  branch: master<br></code></pre></td></tr></table></figure>
-<p>执行以下命令部署</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">更多</a></p>
-<h3 id="7、生成静态文件"><a href="#7、生成静态文件" class="headerlink" title="7、生成静态文件"></a>7、生成静态文件</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">hexo</span> clean  <span class="hljs-comment"># 会删除掉public 目录和db.json</span><br>hexo g  <span class="hljs-comment"># 重新在public目录下创建资源</span><br></code></pre></td></tr></table></figure>
-<p> <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">hexo g 更多</a></p>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h5 id="基础设计模式"><a href="#基础设计模式" class="headerlink" title="基础设计模式"></a>基础设计模式</h5><p>回调模式</p>
+<p>观察者模式</p>
+<p>异步控制流模式</p>
+<p>1、回调函数</p>
+<p>2、ES2015+</p>
+<p>流编程</p>
+<p>工厂模式</p>
+<p>代理模式</p>
+<p>装饰者模式</p>
+<p>适配器模式</p>
+<p>策略模式</p>
+<p>状态模式</p>
+<p>模板模式</p>
+<p>中间件</p>
+<p>命令模式</p>
 
                 
               </div>
@@ -325,8 +320,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用hexo搭建博客</div>
-      <div>http://example.com/2022/12/01/工具篇/使用hexo搭建博客/</div>
+      <div>Node.js常见使用</div>
+      <div>http://example.com/2022/12/01/大前端/Node.js/</div>
     </div>
     <div class="license-meta">
       
@@ -370,15 +365,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/01/%E5%A4%A7%E5%89%8D%E7%AB%AF/Node.js/" title="Node.js常见使用">
+                      <a href="/2022/12/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Node.js常见使用</span>
+                        <span class="hidden-mobile">设计模式</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/12/01/%E5%B7%A5%E5%85%B7%E7%AF%87/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="使用hexo搭建博客">
+                        <span class="hidden-mobile">使用hexo搭建博客</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
